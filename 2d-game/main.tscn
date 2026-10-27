@@ -11,4 +11,4 @@
 [node name="thebot" parent="." unique_id=78415760 instance=ExtResource("2_h2yge")]
 
 [node name="Player" parent="." unique_id=47756695 instance=ExtResource("3_h2yge")]
-position = Vector2(274, 255)
+position = Vector2(173, -119)
