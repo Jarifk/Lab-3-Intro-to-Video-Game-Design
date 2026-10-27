@@ -11,3 +11,4 @@ offset_top = -1500.0
 offset_right = 8070.0
 offset_bottom = 1500.0
 texture = ExtResource("1_7gsfu")
+stretch_mode = 1
