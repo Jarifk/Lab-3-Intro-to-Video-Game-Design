@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://b4fk3hgmef5jq"]
 
+[ext_resource type="Texture2D" uid="uid://jjymuvwmefl3" path="res://Background/Crystal_Caves_Forest_2D_Platformer_Tileset_Background - Layer 00.png" id="1_7gsfu"]
+
 [node name="level2root" type="Node2D" unique_id=1971730465]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1253324305]
+
+[node name="background" type="TextureRect" parent="Parallax2D" unique_id=1117435995]
+offset_top = -1500.0
+offset_right = 8070.0
+offset_bottom = 1500.0
+texture = ExtResource("1_7gsfu")
