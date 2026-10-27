@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bqy5e6flrombo"]
+
+[ext_resource type="Texture2D" uid="uid://cgcqmtok1vfwm" path="res://icon.svg" id="1_n8o8f"]
+[ext_resource type="Script" uid="uid://carxxt2wbx83j" path="res://bot.gd" id="2_mo174"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjcv3"]
+size = Vector2(127, 127)
+
+[node name="thebot" type="RigidBody2D" unique_id=78415760]
+
+[node name="bot" type="Sprite2D" parent="." unique_id=1319589210]
+texture = ExtResource("1_n8o8f")
+script = ExtResource("2_mo174")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1651352371]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_tjcv3")

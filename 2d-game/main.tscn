@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d18nkw05phsou"]
+
+[ext_resource type="PackedScene" uid="uid://dyhpadl73reqf" path="res://levelroot.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bqy5e6flrombo" path="res://bot.tscn" id="2_h2yge"]
+
+[node name="main" type="Node2D" unique_id=1426000851]
+
+[node name="levelroot" parent="." unique_id=764839663 instance=ExtResource("1_0xm2m")]
+
+[node name="thebot" parent="." unique_id=78415760 instance=ExtResource("2_h2yge")]
