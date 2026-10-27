@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://3nrhqka7heia"]
+
+[ext_resource type="PackedScene" uid="uid://bpyvsil6a3nw2" path="res://kirby.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=1467302465]
+
+[node name="KirbyScene" parent="." unique_id=81191959 instance=ExtResource("1_ig7tw")]
