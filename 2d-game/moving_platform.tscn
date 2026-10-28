@@ -9,7 +9,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath("AnimatableBody2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -26,7 +26,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath("AnimatableBody2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -42,22 +42,22 @@ _data = {
 &"move": SubResource("Animation_oaxfr")
 }
 
-[node name="movingPlatform" type="AnimatableBody2D" unique_id=1492526957]
+[node name="movingPlatform" type="Node2D" unique_id=998112140]
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1778557845]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=797066808]
 
-[node name="platformLeft" type="Sprite2D" parent="Node2D" unique_id=992739673]
+[node name="platformLeft" type="Sprite2D" parent="AnimatableBody2D" unique_id=992739673]
 texture = ExtResource("1_f8lbu")
 
-[node name="platformMiddle" type="Sprite2D" parent="Node2D" unique_id=1769206427]
+[node name="platformMiddle" type="Sprite2D" parent="AnimatableBody2D" unique_id=1769206427]
 position = Vector2(122, 0)
 texture = ExtResource("2_oaxfr")
 
-[node name="platformRight" type="Sprite2D" parent="Node2D" unique_id=829826713]
+[node name="platformRight" type="Sprite2D" parent="AnimatableBody2D" unique_id=829826713]
 position = Vector2(246, 0)
 texture = ExtResource("3_n0cw3")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1707777254]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AnimatableBody2D" unique_id=1707777254]
 position = Vector2(-1, 0)
 polygon = PackedVector2Array(298, -57, -47, -57, -59, -29, -22, 40, 10, 52, 248, 54, 272, 37, 311, -27)
 
