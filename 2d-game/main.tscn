@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://dyhpadl73reqf" path="res://levelroot.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bqy5e6flrombo" path="res://bot.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://6f7jdt42tbxi" path="res://player.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" path="res://potion.tscn" id="4_potion"]
+[ext_resource type="Texture2D" path="res://potion_red.png" id="5_red"]
+[ext_resource type="Texture2D" path="res://potion_blue.png" id="6_blue"]
+[ext_resource type="Texture2D" path="res://potion_green.png" id="7_green"]
 
 [node name="main" type="Node2D" unique_id=1426000851]
 
@@ -12,3 +16,21 @@
 
 [node name="Player" parent="." unique_id=47756695 instance=ExtResource("3_h2yge")]
 position = Vector2(173, -119)
+
+[node name="HealthPotion" parent="." unique_id=1907330412 instance=ExtResource("4_potion")]
+position = Vector2(460, 480)
+potion_name = "Health Potion"
+texture = ExtResource("5_red")
+glow_color = Color(1, 0.3, 0.3, 1)
+
+[node name="ManaPotion" parent="." unique_id=1907330413 instance=ExtResource("4_potion")]
+position = Vector2(640, 480)
+potion_name = "Mana Potion"
+texture = ExtResource("6_blue")
+glow_color = Color(0.3, 0.55, 1, 1)
+
+[node name="SpeedPotion" parent="." unique_id=1907330414 instance=ExtResource("4_potion")]
+position = Vector2(820, 480)
+potion_name = "Speed Potion"
+texture = ExtResource("7_green")
+glow_color = Color(0.35, 1, 0.4, 1)
