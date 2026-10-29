@@ -122,7 +122,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"attack",
-"speed": 8.0
+"speed": 18.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -174,7 +174,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"walk",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hqtel"]
@@ -182,7 +182,7 @@ radius = 30.5
 height = 160.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bxlro"]
-size = Vector2(95.09375, 81.625)
+size = Vector2(128.88672, 140.40625)
 
 [node name="Player" type="CharacterBody2D" unique_id=47756695]
 script = ExtResource("1_hqtel")
@@ -191,7 +191,9 @@ script = ExtResource("1_hqtel")
 position = Vector2(146.79688, 504.00006)
 scale = Vector2(2, 2.015)
 sprite_frames = SubResource("SpriteFrames_bxlro")
-animation = &"idle"
+animation = &"attack"
+frame = 7
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=669044123]
 position = Vector2(135, 520)
@@ -201,8 +203,10 @@ shape = SubResource("CapsuleShape2D_hqtel")
 position = Vector2(131, 501)
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=2051968657]
-position = Vector2(296, 162)
+position = Vector2(225, 192)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=1532536150]
-position = Vector2(-7, 313)
+position = Vector2(14.443359, 323.79688)
 shape = SubResource("RectangleShape2D_bxlro")
+
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

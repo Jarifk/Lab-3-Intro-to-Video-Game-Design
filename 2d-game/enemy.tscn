@@ -149,7 +149,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_j1pr3")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"goblindie",
 "speed": 5.0
 }, {
@@ -209,33 +209,34 @@ animations = [{
 }],
 "loop": 1,
 "name": &"goblinwalk",
-"speed": 6.0
+"speed": 13.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sr3cs"]
-radius = 72.0
-height = 172.0
+radius = 52.0
+height = 126.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xp1m"]
-size = Vector2(134, 162)
+size = Vector2(113, 120)
 
 [node name="Enemy" type="CharacterBody2D" unique_id=889510981]
 script = ExtResource("1_e1ltt")
 
 [node name="Goblin" type="AnimatedSprite2D" parent="." unique_id=2058397257]
-position = Vector2(2.000001, -3)
-scale = Vector2(0.40696567, 0.36230963)
+position = Vector2(-2, 2)
+scale = Vector2(0.29508588, 0.27929357)
 sprite_frames = SubResource("SpriteFrames_bxlro")
 animation = &"goblinwalk"
-frame = 1
-frame_progress = 0.623389
+frame_progress = 0.6073922
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=17940546]
-position = Vector2(12, -10)
+position = Vector2(4, -7)
 shape = SubResource("CapsuleShape2D_sr3cs")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=723343877]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1176618718]
-position = Vector2(10, -8)
+position = Vector2(2.5, -8)
 shape = SubResource("RectangleShape2D_0xp1m")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

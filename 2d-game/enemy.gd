@@ -19,7 +19,7 @@ func _physics_process(delta: float) -> void:
 		direction *= -1
 #Move
 	velocity.x = direction * SPEED
-	$Goblin.flip_h = (direction < 0)
+	$Goblin.flip_h = (direction > 0)
 	$Goblin.play("goblinwalk")
 	
 	move_and_slide()
@@ -36,6 +36,11 @@ func take_damage() -> void:
 	#Won't kill wizard after it dies
 	$Hitbox/CollisionShape2D.set_deferred("disabled", true)
 	$CollisionShape2D.set_deferred("disabled", true)
+	
+# Triggers respawn for wizard
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body.has_method("die"):
+		body.die()
 
 	# Handle jump.
 	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():

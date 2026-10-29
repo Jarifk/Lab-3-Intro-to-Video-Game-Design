@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://6f7jdt42tbxi" path="res://player.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" path="res://potion.tscn" id="4_potion"]
 [ext_resource type="Texture2D" uid="uid://ied7npxlxd8" path="res://potion_blue.png" id="6_blue"]
+[ext_resource type="PackedScene" uid="uid://cwsrieajhnttu" path="res://enemy.tscn" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://dnf0vibe18wxf" path="res://potion_green.png" id="7_green"]
 
 [node name="main" type="Node2D" unique_id=1426000851]
@@ -30,3 +31,9 @@ position = Vector2(820, 480)
 potion_name = "Speed Potion"
 texture = ExtResource("7_green")
 glow_color = Color(0.35, 1, 0.4, 1)
+
+[node name="Enemy" parent="." unique_id=889510981 instance=ExtResource("7_272bh")]
+position = Vector2(913, 471)
+
+[node name="Enemy2" parent="." unique_id=1945633896 instance=ExtResource("7_272bh")]
+position = Vector2(1959, 67)

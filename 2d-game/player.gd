@@ -37,6 +37,10 @@ func _physics_process(delta: float) -> void:
 			
 	move_and_slide()
 	
+	# Respawn if fall
+	if position.y > 1200:
+		die()
+	
 #Fighting goblin triggers only when attacking
 func _on_attack_area_body_entered(body: Node2D) -> void:
 	# Only deal damage if the wizard is actively playing the attack animation
