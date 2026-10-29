@@ -22,6 +22,9 @@ func _physics_process(delta: float) -> void:
 	if direction != 0:
 		velocity.x = direction * SPEED
 		$Wizard.flip_h = (direction < 0)
+		
+		# Flip AttackArea position based on facing direction
+		$AttackArea.position.x = -abs($AttackArea.position.x) if direction < 0 else abs($AttackArea.position.x)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
@@ -31,5 +34,8 @@ func _physics_process(delta: float) -> void:
 			$Wizard.play("walk")
 		else:
 			$Wizard.play("idle")
+	# Death
+func die() -> void:
+	get_tree().reload_current_scene()
 
 	move_and_slide()
