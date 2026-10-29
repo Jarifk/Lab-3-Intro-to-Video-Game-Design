@@ -227,7 +227,7 @@ position = Vector2(-2, 2)
 scale = Vector2(0.29508588, 0.27929357)
 sprite_frames = SubResource("SpriteFrames_bxlro")
 animation = &"goblinwalk"
-frame_progress = 0.6073922
+frame_progress = 0.80616367
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=17940546]
 position = Vector2(4, -7)
