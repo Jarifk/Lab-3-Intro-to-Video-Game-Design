@@ -3,12 +3,92 @@
 [ext_resource type="Script" uid="uid://bj3i62mwqa507" path="res://enemy.gd" id="1_e1ltt"]
 [ext_resource type="Texture2D" uid="uid://d2qii1s0m5eje" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_000.png" id="1_hb8ge"]
 [ext_resource type="Texture2D" uid="uid://dlono77muay3l" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_001.png" id="2_e1ltt"]
+[ext_resource type="Texture2D" uid="uid://bx5xjoypggrbh" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_000.png" id="2_qgdfx"]
 [ext_resource type="Texture2D" uid="uid://04fsgpp1pd4m" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_002.png" id="3_dxifv"]
+[ext_resource type="Texture2D" uid="uid://ccitjmn180eam" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_001.png" id="3_qku5p"]
+[ext_resource type="Texture2D" uid="uid://dy55e4wbyht33" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_002.png" id="4_l1fjw"]
 [ext_resource type="Texture2D" uid="uid://dkpxqrjjrs44h" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_003.png" id="4_pwjut"]
+[ext_resource type="Texture2D" uid="uid://l2b3nmclihon" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_003.png" id="5_b5wqg"]
 [ext_resource type="Texture2D" uid="uid://e8icnj5ntioi" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_004.png" id="5_n0g06"]
 [ext_resource type="Texture2D" uid="uid://cfvj3ytxrg087" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_005.png" id="6_ar8e5"]
+[ext_resource type="Texture2D" uid="uid://3w0nawlu50ry" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_004.png" id="6_hgro5"]
+[ext_resource type="Texture2D" uid="uid://nqaujkkb62nl" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_005.png" id="7_18rq2"]
 [ext_resource type="Texture2D" uid="uid://ee173uo8ua5c" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_006.png" id="7_doop2"]
 [ext_resource type="Texture2D" uid="uid://d34chh1ql812" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_007.png" id="8_5hcft"]
+[ext_resource type="Texture2D" uid="uid://4he4ht2ivaci" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_006.png" id="8_ccdwq"]
+[ext_resource type="Texture2D" uid="uid://3ap3dntjplrd" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/06-Die_/2D_GOBLIN__Die_007.png" id="9_0jgdh"]
+[ext_resource type="Texture2D" uid="uid://dnlietbdpb66l" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_000.png" id="10_6wg26"]
+[ext_resource type="Texture2D" uid="uid://c8cniq2pxf1m2" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_001.png" id="11_qskgw"]
+[ext_resource type="Texture2D" uid="uid://drhjor0cb3kf7" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_002.png" id="12_g3onx"]
+[ext_resource type="Texture2D" uid="uid://ccngr3ly8khxq" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_003.png" id="13_o707m"]
+[ext_resource type="Texture2D" uid="uid://cccfyfvbqeajp" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_004.png" id="14_difxq"]
+[ext_resource type="Texture2D" uid="uid://b4rfo6ll5mws" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_005.png" id="15_5tv8x"]
+[ext_resource type="Texture2D" uid="uid://6vrqoaaktigq" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_006.png" id="16_jnl6c"]
+[ext_resource type="Texture2D" uid="uid://ce06cuduobwny" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_007.png" id="17_lv0vf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fu1e"]
+atlas = ExtResource("2_qgdfx")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p80fi"]
+atlas = ExtResource("3_qku5p")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju3h7"]
+atlas = ExtResource("4_l1fjw")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3p7n"]
+atlas = ExtResource("5_b5wqg")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ehh3"]
+atlas = ExtResource("6_hgro5")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nwx4"]
+atlas = ExtResource("7_18rq2")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fq8ad"]
+atlas = ExtResource("8_ccdwq")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1pr3"]
+atlas = ExtResource("9_0jgdh")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxnat"]
+atlas = ExtResource("10_6wg26")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nettl"]
+atlas = ExtResource("11_qskgw")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_20yfm"]
+atlas = ExtResource("12_g3onx")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6aid"]
+atlas = ExtResource("13_o707m")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t62om"]
+atlas = ExtResource("14_difxq")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_di3s7"]
+atlas = ExtResource("15_5tv8x")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8kvh"]
+atlas = ExtResource("16_jnl6c")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj7qy"]
+atlas = ExtResource("17_lv0vf")
+region = Rect2(0, 0, 524, 591)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nnovl"]
 atlas = ExtResource("1_hb8ge")
@@ -46,6 +126,64 @@ region = Rect2(0, 0, 524, 591)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_6fu1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p80fi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju3h7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3p7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ehh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nwx4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fq8ad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1pr3")
+}],
+"loop": 1,
+"name": &"goblindie",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxnat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nettl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_20yfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6aid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t62om")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_di3s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8kvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj7qy")
+}],
+"loop": 1,
+"name": &"goblinhurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_nnovl")
 }, {
 "duration": 1.0,
@@ -70,8 +208,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_kdav3")
 }],
 "loop": 1,
-"name": &"default",
-"speed": 5.0
+"name": &"goblinwalk",
+"speed": 6.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sr3cs"]
@@ -88,7 +226,9 @@ script = ExtResource("1_e1ltt")
 position = Vector2(2.000001, -3)
 scale = Vector2(0.40696567, 0.36230963)
 sprite_frames = SubResource("SpriteFrames_bxlro")
-frame_progress = 0.24155988
+animation = &"goblinwalk"
+frame = 1
+frame_progress = 0.623389
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=17940546]
 position = Vector2(12, -10)

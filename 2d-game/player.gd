@@ -34,8 +34,16 @@ func _physics_process(delta: float) -> void:
 			$Wizard.play("walk")
 		else:
 			$Wizard.play("idle")
-	# Death
+			
+	move_and_slide()
+	
+#Fighting goblin triggers only when attacking
+func _on_attack_area_body_entered(body: Node2D) -> void:
+	# Only deal damage if the wizard is actively playing the attack animation
+	if $Wizard.animation == "attack" and $Wizard.is_playing():
+		if body.has_method("take_damage"):
+			body.take_damage()
+	
+# Death
 func die() -> void:
 	get_tree().reload_current_scene()
-
-	move_and_slide()
