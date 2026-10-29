@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://cwsrieajhnttu"]
+
+[ext_resource type="Texture2D" uid="uid://d2qii1s0m5eje" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_000.png" id="1_hb8ge"]
+[ext_resource type="Texture2D" uid="uid://dlono77muay3l" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_001.png" id="2_e1ltt"]
+[ext_resource type="Texture2D" uid="uid://04fsgpp1pd4m" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_002.png" id="3_dxifv"]
+[ext_resource type="Texture2D" uid="uid://dkpxqrjjrs44h" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_003.png" id="4_pwjut"]
+[ext_resource type="Texture2D" uid="uid://e8icnj5ntioi" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_004.png" id="5_n0g06"]
+[ext_resource type="Texture2D" uid="uid://cfvj3ytxrg087" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_005.png" id="6_ar8e5"]
+[ext_resource type="Texture2D" uid="uid://ee173uo8ua5c" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_006.png" id="7_doop2"]
+[ext_resource type="Texture2D" uid="uid://d34chh1ql812" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/02-Run_/2D_GOBLIN__Run_007.png" id="8_5hcft"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnovl"]
+atlas = ExtResource("1_hb8ge")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmwgi"]
+atlas = ExtResource("2_e1ltt")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2u8i"]
+atlas = ExtResource("3_dxifv")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otto8"]
+atlas = ExtResource("4_pwjut")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8q82m"]
+atlas = ExtResource("5_n0g06")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epc7x"]
+atlas = ExtResource("6_ar8e5")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7rgc"]
+atlas = ExtResource("7_doop2")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdav3"]
+atlas = ExtResource("8_5hcft")
+region = Rect2(0, 0, 524, 591)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bxlro"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnovl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmwgi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2u8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otto8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8q82m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epc7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7rgc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdav3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sr3cs"]
+radius = 72.0
+height = 172.0
+
+[node name="Enemy" type="CharacterBody2D" unique_id=889510981]
+
+[node name="Goblin" type="AnimatedSprite2D" parent="." unique_id=2058397257]
+position = Vector2(2.000001, -3)
+scale = Vector2(0.40696567, 0.36230963)
+sprite_frames = SubResource("SpriteFrames_bxlro")
+frame_progress = 0.24155988
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=17940546]
+position = Vector2(12, -10)
+shape = SubResource("CapsuleShape2D_sr3cs")
