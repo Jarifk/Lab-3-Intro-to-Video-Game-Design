@@ -3167,6 +3167,7 @@ sources/30 = SubResource("TileSetAtlasSource_q00tl")
 [node name="levelroot" type="Node2D" unique_id=764839663]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=143513431]
+scroll_offset = Vector2(2, -1)
 repeat_size = Vector2(0, 2287)
 repeat_times = 4
 limit_begin = Vector2(0, -10000000)
