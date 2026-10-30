@@ -1,11 +1,12 @@
-[gd_scene format=3 uid="uid://cmacnjpvgy10x"]
+[gd_scene format=3 uid="uid://bc2pjrg16kibc"]
 
-[ext_resource type="Texture2D" uid="uid://qxqwb4lh3cbf" path="res://Platfromer/Crystal_Caves_Forest_2D_Platformer_Tileset_Platformer - Ground 10.png" id="1_f8lbu"]
-[ext_resource type="Texture2D" uid="uid://cf50x45utaxn6" path="res://Platfromer/Crystal_Caves_Forest_2D_Platformer_Tileset_Platformer - Ground 11.png" id="2_oaxfr"]
-[ext_resource type="Texture2D" uid="uid://1cxvgt873q81" path="res://Platfromer/Crystal_Caves_Forest_2D_Platformer_Tileset_Platformer - Ground 12.png" id="3_n0cw3"]
+[ext_resource type="Texture2D" uid="uid://qxqwb4lh3cbf" path="res://Platfromer/Crystal_Caves_Forest_2D_Platformer_Tileset_Platformer - Ground 10.png" id="1_lr4av"]
+[ext_resource type="Texture2D" uid="uid://cf50x45utaxn6" path="res://Platfromer/Crystal_Caves_Forest_2D_Platformer_Tileset_Platformer - Ground 11.png" id="2_1gmpi"]
+[ext_resource type="Texture2D" uid="uid://1cxvgt873q81" path="res://Platfromer/Crystal_Caves_Forest_2D_Platformer_Tileset_Platformer - Ground 12.png" id="3_bkiay"]
 
 [sub_resource type="Animation" id="Animation_f8lbu"]
-length = 0.001
+length = 5.0
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -13,10 +14,10 @@ tracks/0/path = NodePath("AnimatableBody2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Vector2(0, 0), Vector2(-300, 0), Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_oaxfr"]
@@ -43,19 +44,20 @@ _data = {
 }
 
 [node name="movingPlatform" type="Node2D" unique_id=998112140]
+scale = Vector2(0.8, 0.8)
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=797066808]
 
 [node name="platformLeft" type="Sprite2D" parent="AnimatableBody2D" unique_id=992739673]
-texture = ExtResource("1_f8lbu")
+texture = ExtResource("1_lr4av")
 
 [node name="platformMiddle" type="Sprite2D" parent="AnimatableBody2D" unique_id=1769206427]
 position = Vector2(122, 0)
-texture = ExtResource("2_oaxfr")
+texture = ExtResource("2_1gmpi")
 
 [node name="platformRight" type="Sprite2D" parent="AnimatableBody2D" unique_id=829826713]
 position = Vector2(246, 0)
-texture = ExtResource("3_n0cw3")
+texture = ExtResource("3_bkiay")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AnimatableBody2D" unique_id=1707777254]
 position = Vector2(-1, 0)
@@ -63,4 +65,4 @@ polygon = PackedVector2Array(298, -57, -47, -57, -59, -29, -22, 40, 10, 52, 248,
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1924942871]
 libraries/ = SubResource("AnimationLibrary_n0cw3")
-autoplay = &"move"
+autoplay = &"RESET"
