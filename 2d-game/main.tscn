@@ -14,16 +14,16 @@
 [node name="Player" parent="." unique_id=47756695 instance=ExtResource("3_h2yge")]
 position = Vector2(-25, -79)
 
-[node name="HealthPotion" parent="." unique_id=1907330412 instance=ExtResource("4_potion")]
+[node name="RedPotion" parent="." unique_id=1907330412 instance=ExtResource("4_potion")]
 position = Vector2(460, 480)
 
-[node name="ManaPotion" parent="." unique_id=1907330413 instance=ExtResource("4_potion")]
+[node name="BluePotion" parent="." unique_id=1907330413 instance=ExtResource("4_potion")]
 position = Vector2(640, 480)
 potion_name = "Mana Potion"
 texture = ExtResource("6_blue")
 glow_color = Color(0.3, 0.55, 1, 1)
 
-[node name="SpeedPotion" parent="." unique_id=1907330414 instance=ExtResource("4_potion")]
+[node name="GreenPotion" parent="." unique_id=1907330414 instance=ExtResource("4_potion")]
 position = Vector2(820, 480)
 potion_name = "Speed Potion"
 texture = ExtResource("7_green")
