@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://d18nkw05phsou"]
 
 [ext_resource type="PackedScene" uid="uid://dyhpadl73reqf" path="res://levelroot.tscn" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://bqy5e6flrombo" path="res://bot.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://6f7jdt42tbxi" path="res://player.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" path="res://potion.tscn" id="4_potion"]
 [ext_resource type="Texture2D" uid="uid://ied7npxlxd8" path="res://potion_blue.png" id="6_blue"]
@@ -12,10 +11,8 @@
 
 [node name="levelroot" parent="." unique_id=764839663 instance=ExtResource("1_0xm2m")]
 
-[node name="thebot" parent="." unique_id=78415760 instance=ExtResource("2_h2yge")]
-
 [node name="Player" parent="." unique_id=47756695 instance=ExtResource("3_h2yge")]
-position = Vector2(173, -119)
+position = Vector2(-25, -79)
 
 [node name="HealthPotion" parent="." unique_id=1907330412 instance=ExtResource("4_potion")]
 position = Vector2(460, 480)

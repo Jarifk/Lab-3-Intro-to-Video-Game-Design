@@ -201,6 +201,7 @@ shape = SubResource("CapsuleShape2D_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=103199358]
 position = Vector2(131, 501)
+limit_left = 0
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=2051968657]
 position = Vector2(225, 192)
