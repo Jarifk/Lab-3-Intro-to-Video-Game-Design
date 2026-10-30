@@ -45,7 +45,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	# Respawn if fall
-	if position.y > 150:
+	if position.y > 1000:
 		die()
 #Die
 func die() -> void:
