@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://bnfhsafl3easj"]
+
+[ext_resource type="Script" uid="uid://domuu7tu4lsd7" path="res://tutorial.gd" id="1_ehuit"]
+[ext_resource type="Texture2D" uid="uid://jjymuvwmefl3" path="res://Background/Crystal_Caves_Forest_2D_Platformer_Tileset_Background - Layer 00.png" id="2_5mrt3"]
+[ext_resource type="FontFile" uid="uid://bcwohwec2dk7p" path="res://immortal font.ttf" id="2_ehuit"]
+[ext_resource type="FontFile" uid="uid://6mhfyhlbx0dc" path="res://enchanted font.otf" id="3_rwowx"]
+
+[node name="Tutorial" type="Control" unique_id=1367979284]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ehuit")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1395174093]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5mrt3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=503172177]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -824.0
+offset_top = 52.0
+offset_right = 828.0
+offset_bottom = 844.0
+grow_horizontal = 2
+color = Color(1, 1, 0.8352941, 1)
+
+[node name="Label" type="Label" parent="." unique_id=545624218]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -758.0
+offset_top = 86.0
+offset_right = 782.0
+offset_bottom = 455.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.043137256, 0, 0.19607843, 1)
+theme_override_fonts/font = ExtResource("2_ehuit")
+theme_override_font_sizes/font_size = 40
+text = "Greetings, wizard! Welcome to the Enchanted Caves. You are here to collect 
+potions for your next spell. Use your agility, powers, and strategical skills to 
+navigate the caves and collect as many potions as you can! But beware of the 
+dangers– viscious goblins and treacherous ledges stand in your way."
+
+[node name="Label2" type="Label" parent="." unique_id=230817756]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -527.0
+offset_top = 324.0
+offset_right = 626.0
+offset_bottom = 798.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.043137256, 0, 0.19607843, 1)
+theme_override_fonts/font = ExtResource("2_ehuit")
+theme_override_font_sizes/font_size = 40
+text = "
+- Press the left/right arrows keys to move left/right
+- Press the up arrow key to jump
+- Press the spacebar to attack goblins with your powers
+- Walk through potions to collect them
+- If you fall off a ledge or are attacked by a goblin, 
+you will be sent back to the start of the level
+- Collect as many potions as you can!
+"
+
+[node name="StartButton" type="Button" parent="." unique_id=451600641]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -134.0
+offset_top = -182.0
+offset_right = 147.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 0.8352941, 1)
+theme_override_colors/font_outline_color = Color(0.043137256, 0, 0.19607843, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("3_rwowx")
+theme_override_font_sizes/font_size = 150
+text = "Play"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dhf7pqsuw5uhv"]
 
+[ext_resource type="Script" uid="uid://cqvx6bd32lrut" path="res://menu.gd" id="1_mae5d"]
 [ext_resource type="Texture2D" uid="uid://jjymuvwmefl3" path="res://Background/Crystal_Caves_Forest_2D_Platformer_Tileset_Background - Layer 00.png" id="1_ouk20"]
 [ext_resource type="FontFile" uid="uid://6mhfyhlbx0dc" path="res://enchanted font.otf" id="2_mae5d"]
 
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_mae5d")
 
 [node name="Background" type="TextureRect" parent="." unique_id=213035205]
 layout_mode = 1
@@ -63,12 +65,14 @@ theme_override_fonts/font = ExtResource("2_mae5d")
 theme_override_font_sizes/font_size = 150
 text = "Play"
 
-[node name="Tutorial" type="Button" parent="MenuButtons" unique_id=1144452753]
-custom_minimum_size = Vector2(70, 0)
+[node name="TutorialButton" type="Button" parent="MenuButtons" unique_id=1876453719]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0.8352941, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0.0627451, 1)
+theme_override_colors/font_outline_color = Color(0.043137256, 0, 0.19607843, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("2_mae5d")
 theme_override_font_sizes/font_size = 150
 text = "Tutorial"
+
+[connection signal="pressed" from="MenuButtons/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MenuButtons/TutorialButton" to="." method="_on_tutorial_button_pressed"]
