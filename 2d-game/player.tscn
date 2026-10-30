@@ -205,7 +205,7 @@ shape = SubResource("CapsuleShape2D_hqtel")
 position = Vector2(131, 501)
 limit_left = -5
 limit_top = -10000073
-limit_right = 9999995
+limit_right = 8000
 limit_bottom = 9999927
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=2051968657]
