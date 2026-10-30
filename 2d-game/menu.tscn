@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dhf7pqsuw5uhv"]
+
+[ext_resource type="Texture2D" uid="uid://jjymuvwmefl3" path="res://Background/Crystal_Caves_Forest_2D_Platformer_Tileset_Background - Layer 00.png" id="1_ouk20"]
+[ext_resource type="FontFile" uid="uid://6mhfyhlbx0dc" path="res://enchanted font.otf" id="2_mae5d"]
+
+[node name="Menu" type="Control" unique_id=2114335768]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=213035205]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ouk20")
+
+[node name="Title" type="Label" parent="." unique_id=1761330268]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -808.0
+offset_top = 260.0
+offset_right = 813.0
+offset_bottom = 428.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0.8352941, 1)
+theme_override_colors/font_outline_color = Color(0.043137256, 0, 0.19607843, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 200
+text = "The Enchanted Caves"
+horizontal_alignment = 1
+
+[node name="MenuButtons" type="HBoxContainer" parent="." unique_id=567957164]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = 60.0
+offset_right = 519.0
+offset_bottom = 332.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 200
+
+[node name="StartButton" type="Button" parent="MenuButtons" unique_id=188655772]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.8352941, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.0627451, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 150
+text = "Play"
+
+[node name="Tutorial" type="Button" parent="MenuButtons" unique_id=1144452753]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.8352941, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.0627451, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mae5d")
+theme_override_font_sizes/font_size = 150
+text = "Tutorial"
