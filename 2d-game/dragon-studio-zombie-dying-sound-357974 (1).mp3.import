@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3c3akprgy6ml"
+path="res://.godot/imported/dragon-studio-zombie-dying-sound-357974 (1).mp3-512c27c178fdf1ee69c697a90b1c8991.mp3str"
+
+[deps]
+
+source_file="res://dragon-studio-zombie-dying-sound-357974 (1).mp3"
+dest_files=["res://.godot/imported/dragon-studio-zombie-dying-sound-357974 (1).mp3-512c27c178fdf1ee69c697a90b1c8991.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

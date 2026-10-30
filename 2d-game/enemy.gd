@@ -13,10 +13,11 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-
-# Turn around at walls
-	if is_on_wall():
+	
+	# Turn around at wall and edge
+	if is_on_wall() or (is_on_floor() and not $RayCast2D.is_colliding()):
 		direction *= -1
+		$RayCast2D.position.x = 15 * direction
 #Move
 	velocity.x = direction * SPEED
 	$Goblin.flip_h = (direction > 0)
@@ -24,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide()
 
-#When Wizard hits Goblin	
+#When Wizard hits Goblin
 func take_damage() -> void:
 	if is_dead:
 		return
@@ -32,6 +33,7 @@ func take_damage() -> void:
 	is_dead = true
 	velocity = Vector2.ZERO
 	$Goblin.play("goblindie")
+	$GoblinDieSound.play()
 	
 	#Won't kill wizard after it dies
 	$Hitbox/CollisionShape2D.set_deferred("disabled", true)

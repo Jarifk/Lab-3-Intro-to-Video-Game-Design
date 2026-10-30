@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://b4rfo6ll5mws" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_005.png" id="15_5tv8x"]
 [ext_resource type="Texture2D" uid="uid://6vrqoaaktigq" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_006.png" id="16_jnl6c"]
 [ext_resource type="Texture2D" uid="uid://ce06cuduobwny" path="res://2D CHIBI GOBLIN/2D CHIBI GOBLIN/CHIBI GOBLIN-PNG/05-Hurt_/2D_GOBLIN__Hurt_007.png" id="17_lv0vf"]
+[ext_resource type="AudioStream" uid="uid://3c3akprgy6ml" path="res://dragon-studio-zombie-dying-sound-357974 (1).mp3" id="26_qku5p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6fu1e"]
 atlas = ExtResource("2_qgdfx")
@@ -238,5 +239,13 @@ shape = SubResource("CapsuleShape2D_sr3cs")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1176618718]
 position = Vector2(2.5, -8)
 shape = SubResource("RectangleShape2D_0xp1m")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=20027147]
+position = Vector2(-17, 15)
+target_position = Vector2(0, 77)
+
+[node name="GoblinDieSound" type="AudioStreamPlayer2D" parent="." unique_id=1556090407]
+stream = ExtResource("26_qku5p")
+pitch_scale = 2.12
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

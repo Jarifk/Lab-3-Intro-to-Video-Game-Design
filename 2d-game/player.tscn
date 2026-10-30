@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cau2x4stwbwhl" path="res://Wizard Pack/Attack2.png" id="2_hqtel"]
 [ext_resource type="Texture2D" uid="uid://b06oc5k0huneu" path="res://Wizard Pack/Idle.png" id="3_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://df5yjmrpfcgss" path="res://Wizard Pack/Run.png" id="4_1jxqw"]
+[ext_resource type="AudioStream" uid="uid://m2h826ft0ch8" path="res://universfield-dramatic-death-collapse-352720.mp3" id="5_2hs0m"]
+[ext_resource type="AudioStream" uid="uid://cdeffoxk8hxnp" path="res://freesound_community-fire-magic-6947.mp3" id="5_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("2_hqtel")
@@ -122,7 +124,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"attack",
-"speed": 18.0
+"speed": 14.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -182,7 +184,7 @@ radius = 30.5
 height = 160.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bxlro"]
-size = Vector2(128.88672, 140.40625)
+size = Vector2(187, 109.40625)
 
 [node name="Player" type="CharacterBody2D" unique_id=47756695]
 script = ExtResource("1_hqtel")
@@ -201,13 +203,23 @@ shape = SubResource("CapsuleShape2D_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=103199358]
 position = Vector2(131, 501)
-limit_left = 0
+limit_left = -5
+limit_top = -10000073
+limit_right = 9999995
+limit_bottom = 9999927
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=2051968657]
 position = Vector2(225, 192)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=1532536150]
-position = Vector2(14.443359, 323.79688)
+position = Vector2(37.5, 308.29688)
 shape = SubResource("RectangleShape2D_bxlro")
+
+[node name="WizDeathSound" type="AudioStreamPlayer2D" parent="." unique_id=1887629744]
+stream = ExtResource("5_2hs0m")
+
+[node name="WizAttackSound" type="AudioStreamPlayer2D" parent="." unique_id=2112820575]
+stream = ExtResource("5_sweqy")
+pitch_scale = 1.5
 
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
