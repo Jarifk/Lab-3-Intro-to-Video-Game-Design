@@ -35,6 +35,8 @@
 [ext_resource type="PackedScene" uid="uid://6f7jdt42tbxi" path="res://player.tscn" id="34_b1xjw"]
 [ext_resource type="PackedScene" uid="uid://5vd6n4hd81h" path="res://downUpPlatform.tscn" id="34_fqikk"]
 [ext_resource type="PackedScene" uid="uid://cmacnjpvgy10x" path="res://rightLeftPlatform.tscn" id="35_fqikk"]
+[ext_resource type="PackedScene" uid="uid://cwsrieajhnttu" path="res://enemy.tscn" id="36_y3ay3"]
+[ext_resource type="PackedScene" path="res://potion.tscn" id="37_mbg1k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_525hi"]
 texture = ExtResource("2_fqikk")
@@ -3206,3 +3208,35 @@ position = Vector2(5461, 15)
 
 [node name="downUpPlatform3" parent="." unique_id=276143763 instance=ExtResource("34_fqikk")]
 position = Vector2(6481, 46)
+
+[node name="Enemy" parent="." unique_id=889510981 instance=ExtResource("36_y3ay3")]
+position = Vector2(3087, 323)
+
+[node name="Enemy2" parent="." unique_id=2064522417 instance=ExtResource("36_y3ay3")]
+position = Vector2(5635, 295)
+
+[node name="Enemy3" parent="." unique_id=744295173 instance=ExtResource("36_y3ay3")]
+position = Vector2(7308, 439)
+
+[node name="Enemy4" parent="." unique_id=2087663502 instance=ExtResource("36_y3ay3")]
+position = Vector2(7319, -262)
+
+[node name="Potion" parent="." unique_id=17559082 instance=ExtResource("37_mbg1k")]
+position = Vector2(889, 609)
+scale = Vector2(1.5, 1.5)
+
+[node name="Potion2" parent="." unique_id=1895280732 instance=ExtResource("37_mbg1k")]
+position = Vector2(1430, -144)
+scale = Vector2(1.5, 1.5)
+
+[node name="Potion3" parent="." unique_id=365124655 instance=ExtResource("37_mbg1k")]
+position = Vector2(5995, 206.00002)
+scale = Vector2(1.5, 1.5)
+
+[node name="Potion4" parent="." unique_id=1873936862 instance=ExtResource("37_mbg1k")]
+position = Vector2(6904.0005, -352)
+scale = Vector2(1.5, 1.5)
+
+[node name="Potion5" parent="." unique_id=109580470 instance=ExtResource("37_mbg1k")]
+position = Vector2(7718, 353)
+scale = Vector2(1.5, 1.5)
