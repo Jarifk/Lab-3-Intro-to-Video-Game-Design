@@ -3234,9 +3234,9 @@ position = Vector2(5995, 206.00002)
 scale = Vector2(1.5, 1.5)
 
 [node name="Potion4" parent="." unique_id=1873936862 instance=ExtResource("37_mbg1k")]
-position = Vector2(6904.0005, -352)
+position = Vector2(7718, -352)
 scale = Vector2(1.5, 1.5)
 
 [node name="Potion5" parent="." unique_id=109580470 instance=ExtResource("37_mbg1k")]
-position = Vector2(7718, 353)
+position = Vector2(6899, 347)
 scale = Vector2(1.5, 1.5)
