@@ -50,18 +50,18 @@ theme_override_fonts/font = ExtResource("2_ehuit")
 theme_override_font_sizes/font_size = 40
 text = "Greetings, wizard! Welcome to the Enchanted Caves. You are here to collect 
 potions for your next spell. Use your agility, powers, and strategical skills to 
-navigate the caves and collect as many potions as you can! But beware of the 
-dangers– viscious goblins and treacherous ledges stand in your way."
+navigate the caves and collect all the potions! But beware of the 
+dangers – viscious goblins and treacherous ledges stand in your way."
 
 [node name="Label2" type="Label" parent="." unique_id=230817756]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -527.0
-offset_top = 324.0
-offset_right = 626.0
-offset_bottom = 798.0
+offset_left = -543.0
+offset_top = 306.0
+offset_right = 635.0
+offset_bottom = 833.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.043137256, 0, 0.19607843, 1)
 theme_override_fonts/font = ExtResource("2_ehuit")
@@ -72,8 +72,9 @@ text = "
 - Press the spacebar to attack goblins with your powers
 - Walk through potions to collect them
 - If you fall off a ledge or are attacked by a goblin, 
-you will be sent back to the start of the level
-- Collect as many potions as you can!
+  you will be sent back to the start of the level
+- Each level has 5 potions - collect all 5 to open the portal 
+  and advance to the next level!
 "
 
 [node name="StartButton" type="Button" parent="." unique_id=451600641]
