@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://uq6jpspa0t2k"]
+
+[ext_resource type="AudioStream" uid="uid://hsvgxmljp2d6" path="res://fantasyMusic.wav" id="1_o7k1f"]
+
+[node name="MusicController" type="Node2D" unique_id=1598230971]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=360584398]
+stream = ExtResource("1_o7k1f")
+volume_db = -33.298
+autoplay = true
