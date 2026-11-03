@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://potion_counter.gd" id="1_counter"]
+[ext_resource type="FontFile" path="res://enchanted font.otf" id="2_font"]
+
+[node name="PotionCounter" type="CanvasLayer" groups=["hud"]]
+script = ExtResource("1_counter")
+
+[node name="Counter" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 30.0
+offset_right = 540.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(1, 0.95, 0.8, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.05, 0.2, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 56
+text = "Potions: 0 / 0"
+
+[node name="Hint" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 130.0
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.05, 0.2, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 52
+horizontal_alignment = 1

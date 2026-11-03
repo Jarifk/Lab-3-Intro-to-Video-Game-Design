@@ -19,6 +19,7 @@ var _taken := false
 
 
 func _ready() -> void:
+	add_to_group("potions")
 	_start_y = position.y
 	_time = randf() * TAU  # so potions don't all bob in sync
 	if texture:
@@ -46,6 +47,7 @@ func _on_body_entered(body: Node) -> void:
 	if _taken or not body is CharacterBody2D:
 		return  # only the player (not the falling robot) can collect
 	_taken = true
+	remove_from_group("potions")  # so the portal/counter know it's gone
 	collected.emit(potion_name, body)
 	print(potion_name, " collected by ", body.name)
 	set_deferred("monitoring", false)

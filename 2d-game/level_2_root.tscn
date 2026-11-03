@@ -36,6 +36,8 @@
 [ext_resource type="PackedScene" uid="uid://6f7jdt42tbxi" path="res://player.tscn" id="33_sglpq"]
 [ext_resource type="PackedScene" uid="uid://cwsrieajhnttu" path="res://enemy.tscn" id="35_o1sme"]
 [ext_resource type="PackedScene" path="res://potion.tscn" id="36_nbf1q"]
+[ext_resource type="PackedScene" path="res://portal.tscn" id="90_portal"]
+[ext_resource type="PackedScene" path="res://potion_counter.tscn" id="91_counter"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_525hi"]
 texture = ExtResource("2_6qnkf")
@@ -3237,3 +3239,9 @@ scale = Vector2(1.5, 1.5)
 [node name="Potion" parent="." unique_id=670324617 instance=ExtResource("36_nbf1q")]
 position = Vector2(6851, 507)
 scale = Vector2(1.5, 1.5)
+
+[node name="Portal" parent="." instance=ExtResource("90_portal")]
+position = Vector2(7976, 320)
+next_level = "res://level_3_root.tscn"
+
+[node name="PotionCounter" parent="." instance=ExtResource("91_counter")]
